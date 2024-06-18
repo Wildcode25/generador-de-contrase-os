@@ -32,6 +32,10 @@ numbersInput.addEventListener("click",()=>{
     passwordContainer.innerHTML = generatePassword()
     
 })
+document.addEventListener("keyup",(e)=>{
+    if(e.key==="Enter")passwordContainer.innerHTML = generatePassword()
+    
+})
 
 function generatePassword(){
     let passwordArray=[];
